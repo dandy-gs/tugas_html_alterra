@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <title>Form Mandiri 7</title>
+    <!-- CSS Bootstrap Offline -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body class="bg-f0fff">
+    <!-- Navbar -->
+    <section id="navbar">
+      <div class="bg-f0fff fixed-top">
+        <nav class="container navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid p-1">
+            <button
+              type="button"
+              onclick="window.location.href = '#top'"
+              class="btn btn-outline-success"
+            >
+              <img
+                class="img-fluid"
+                src="download.png"
+                alt="alterra.png"
+                width="54"
+                height="54"
+              />
+            </button>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#header"
+              aria-controls="header"
+              aria-expanded="false"
+              aria-label="Toggle Nav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="header">
+              <ul class="navbar-nav ms-auto mb-2 gap-4 align-items-center">
+                <li class="nav-item">
+                  <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#form" class="nav-link">Daftar</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="container pt-lg-3">
+        <div class="bg-f1f3ff mt-2">
+          <div class="row">
+            <div
+              class="col-sm-12 col-md-6 col-lg-6 mt-sm-5 mt-md-3 mt-lg-5"
+            >
+              <h1 class="h-bold mt-sm-5 mt-md-3 mt-lg-5">
+                Mari Bergabung ke Dalam Komunitas Pemuda Senja Senji Animasi
+              </h1>
+              <p class="text-align-justify">
+                Selamat datang di Komunitas Senja Senji Animasi, sebuah forum untuk 
+                saling berbagi kreatifitas untuk mengekspresikan diri ke dalam suatu 
+                kegiatan positif tanpa harus menjadi naif, daftarkan diri kamu segera di form pendaftaran berikut  
+              </p>
+              <button
+                type="button"
+                onclick="window.location.href = '#form'"
+                class="btn btn-success"
+              >
+              Daftar Sekarang
+              </button>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 mt-sm-4 mt-md-5 mt-lg-5">
+              <img
+                class="img-fluid mt-md-5"
+                src="Landscapes.jpg"
+                alt="land.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section id="form">
+      <div class="container pt-lg-3">
+        <div class="row mt-3 mt-md-5 mt-lg-5 pt-3">
+          <div class="col-sm-12 col-md-8 col-lg-8 mb-sm-3 mt-lg-2">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputName1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleInputName1" aria-describedby="nameHelp">
+                <div id="nameHelp" class="form-text">Fill with your name and lets starting be a friend </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+                <label for="examplePhoneNumber1" class="form-label">Phone Number</label>
+                <input min="10" max="12" type="number" class="form-control" id="examplePhoneNumber1" aria-describedby="phoneNumberHelp">
+                <div id="emailPhoneHelp" class="form-text">Give me your number and i will pin to my favorite contact</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlAddress1" class="form-label">Address</label>
+                <textarea class="form-control" id="exampleFormControlAddress1" rows="3" aria-describedby="addressHelp"></textarea>
+                <div id="addressHelp" class="form-text">Type your address here, maybe soon will be my address too, haha just kidding mate!</div>
+              </div>
+              <div class="mb-5">
+                <label for="inlineRadio" class="form-label">Gender</label><br>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Female</label>
+                </div>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+          </div>
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 mt-md-1 mt-lg-2 mt-5 ms-lg-0 ms-md-0 ms-2"
+          >
+            <img
+              class="img-fluid mt-md-3"
+              src="hiking.jpg"
+              alt="gunung.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container mt-5 pt-4 mb-5">
+        <div class="row text-center text-sm-start text-md-start text-lg-start">
+          <div class="col-sm-2 col-md-4 col-lg-4 d-flex flex-column gap-4">
+            <div>Jalan Raya Tidar, Nomor 23, Karangbesuki, Kota Malang, Jawa Timur. 65146.</div>
+            <a href="mailto:binarcarrental@gmail.com"
+              >hiALTA@alterra.id</a
+            >
+          </div>
+          <div class="col-sm-2 col-md-3 col-lg-4 ps-lg-5 mb-4">
+            <div>Connect with us</div>
+            <div
+              class="d-flex gap-3 mt-3 justify-content-center justify-content-lg-start"
+            >
+              <a href="#">
+                <img src="./img/icon_facebook.png" />
+              </a>
+              <a href="#">
+                <img src="./img/icon_instagram.png" />
+              </a>
+              <a href="#"> <img src="./img/icon_twitter.png" /></a>
+              <a href="#"> <img src="./img/icon_twitch.png" /></a>
+            </div>
+          </div>
+          <div
+            id="btn-nav-footer"
+            class="col-sm-2 col-md-1 col-lg-4 mb-5 mb-lg-0"
+          >
+            <div class="mb-4">
+              Copyright Alterra &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+            </div>
+            <img
+                class="img-fluid"
+                src="download.png"
+                alt="alterra.png"
+                width="54"
+                height="54"
+              />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jquery.min.js"></script>
+  </body>
+</html>
